@@ -1,18 +1,15 @@
-<template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
-</template>
-
-<script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+<script setup>
+  import TopNav from "./components/layout/TopNav"
 </script>
+
+<template>
+  <div id="app">
+
+    <TopNav />
+
+    <router-view></router-view>
+  </div>
+</template>
 
 <style>
 #app {
